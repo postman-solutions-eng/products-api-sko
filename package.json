@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": "npx widdershins postman/schemas/index.yaml -o dist/index.md"
+    "deploy": "gh-pages -d dist -b slate -e source",
+    "build": "npx widdershins postman/schemas/index.yaml -o dist/index.html.md"
   },
   "repository": {
     "type": "git",
