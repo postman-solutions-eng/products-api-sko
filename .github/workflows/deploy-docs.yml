@@ -20,6 +20,7 @@ jobs:
         REPO: self
         BRANCH: slate
         FOLDER: dist
+        TARGET_DIR: source
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
