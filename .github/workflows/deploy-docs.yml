@@ -11,7 +11,16 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v2
-    - run: npm run deploy
+    - run: npm run build
+
+    - name: Deploy with gh-pages
+      run: |
+        git remote set-url origin https://git:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npx gh-pages -d dist -b slate -e source -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
   
+
+
