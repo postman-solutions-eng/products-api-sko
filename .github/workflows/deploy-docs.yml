@@ -21,6 +21,7 @@ jobs:
         BRANCH: slate
         FOLDER: dist
         TARGET_DIR: source
+        CLEAR_GLOBS_FILE: .globs
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
