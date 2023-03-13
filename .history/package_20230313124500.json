@@ -1,0 +1,26 @@
+{
+  "name": "products-api-sko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "npx widdershins postman/schemas/schema.yaml -o dist/schema.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postman-solutions-eng/products-api-sko.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/postman-solutions-eng/products-api-sko/issues"
+  },
+  "homepage": "https://github.com/postman-solutions-eng/products-api-sko#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "widdershins": "^4.0.1"
+  }
+}
